@@ -1,5 +1,11 @@
 // Секция "Чем мы занимаемся"
 
+.photos {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .photos__list {
   @extend %list;
   display: flex;
@@ -41,9 +47,6 @@
   color: $primary-bg-color;
 
   @include font(700, 14px, 1.14);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
 }

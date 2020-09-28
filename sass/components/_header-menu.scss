@@ -1,7 +1,7 @@
 // Логотип в хедере
 
 .header__logo {
-  margin-right: 93px;
+  // margin-right: 93px;
 
   color: $second-text-color;
 }
@@ -10,11 +10,11 @@
 
 .menu {
   @extend %list;
-  display: flex;
+  // display: flex;
 }
 
 .menu__item:not(:last-child) {
-  margin-right: 50px;
+  // margin-right: 50px;
 }
 
 .menu__link {

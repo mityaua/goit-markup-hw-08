@@ -1,11 +1,11 @@
 // Секция Героя
 
 .hero {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
-  max-width: 1600px;
-  min-height: 600px;
+  // max-width: 1600px;
+  // min-height: 600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -22,7 +22,7 @@
 }
 
 .hero__content {
-  max-width: 696px;
+  // max-width: 696px;
   margin-right: auto;
   margin-left: auto;
 
@@ -38,9 +38,6 @@
   color: $primary-bg-color;
 
   @include font(900, 44px, 1.36);
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }

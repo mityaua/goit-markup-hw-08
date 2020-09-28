@@ -2,13 +2,13 @@
 
 .contacts {
   @extend %list;
-  display: flex;
+  // display: flex;
 
   margin-left: auto;
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  // margin-right: 50px;
 }
 
 // Ссылки в контактах
@@ -17,9 +17,6 @@
   color: $primary-text-color;
 
   @include font(500, 14px, 1.14);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 

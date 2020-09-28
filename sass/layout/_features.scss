@@ -1,27 +1,33 @@
 // Секция "Преимущества"
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .features__list {
-   @extend %list;
-  display: flex;
+  @extend %list;
+
+  // display: flex;
 }
 
 .features__item {
-  width: calc((100% - 90px) / 4);
-
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
+
+  // width: calc((100% - 90px) / 4);
+
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 // Обертка для иконки с фоном
 
 .features__img {
   margin-bottom: 30px;
-  padding: 20px 100px;
+  padding: 25px;
 
   background-color: $additional-background-color;
 
@@ -44,9 +50,7 @@
   color: $second-text-color;
 
   @include font(700, 14px, 1.14);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
 }
 
