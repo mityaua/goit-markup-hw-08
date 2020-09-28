@@ -1,20 +1,9 @@
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/placeholders";
+@import "./utils/module";
 
-@import "./base/fonts";
-@import "./base/normalize";
-@import "./base/base";
+@import "./base/module";
 
-@import "./components/container";
-@import "./components/btn";
-@import "./components/header";
-@import "./components/logo";
-@import "./components/header-menu";
-@import "./components/header-contacts";
-@import "./components/portfolio";
-@import "./components/footer";
-@import "./components/footer-address";
-@import "./components/footer_social";
-@import "./components/media-icons";
-@import "./components/footer-subscribe";
+@import "./layout/header";
+@import "./layout/portfolio";
+@import "./layout/footer";
+
+@import './components/module';
