@@ -1,0 +1,56 @@
+// Контакты в хедере
+
+.contacts {
+  @extend %list;
+  display: flex;
+
+  margin-left: auto;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+// Ссылки в контактах
+
+.contacts__link {
+  color: $primary-text-color;
+
+  @include font(500, 14px, 1.14);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+// Иконки для контактов
+
+.contacts__icon {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__mail {
+  width: 16px;
+  height: 12px;
+
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.contacts__phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+
+  fill: currentColor;
+}

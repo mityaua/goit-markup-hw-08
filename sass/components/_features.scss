@@ -1,0 +1,58 @@
+// Секция "Преимущества"
+
+.features {
+  padding-top: 94px;
+}
+
+.features__list {
+   @extend %list;
+  display: flex;
+}
+
+.features__item {
+  width: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+// Обертка для иконки с фоном
+
+.features__img {
+  margin-bottom: 30px;
+  padding: 20px 100px;
+
+  background-color: $additional-background-color;
+
+  text-align: center;
+}
+
+// Иконка элемента
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+
+// Тайтл
+
+.features__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $second-text-color;
+
+  @include font(700, 14px, 1.14);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  text-transform: uppercase;
+}
+
+// Текст
+
+.features__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}

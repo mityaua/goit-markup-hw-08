@@ -1,0 +1,19 @@
+// Хедер
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+// Обёртка для всей навигации
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+// Обёртка для логотипа и меню
+
+.navbar {
+  display: flex;
+  align-items: center;
+}

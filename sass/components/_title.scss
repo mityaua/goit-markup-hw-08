@@ -1,0 +1,9 @@
+// Тайтл для секций
+
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #212121;
+  @include font(700, 36px, 1.16);
+  text-align: center;
+}

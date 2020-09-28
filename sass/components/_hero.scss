@@ -1,0 +1,52 @@
+// Секция Героя
+
+.hero {
+  display: flex;
+  align-items: center;
+
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $second-bg-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__content {
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+}
+
+// Тайтл Героя
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $primary-bg-color;
+
+  @include font(900, 44px, 1.36);
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+// Кнопка "Заказать услугу"
+
+.hero__btn {
+  padding: 10px 32px;
+}

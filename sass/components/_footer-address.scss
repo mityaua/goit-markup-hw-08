@@ -1,0 +1,48 @@
+// Блок с адресом в футере
+
+.address-block {
+  margin-right: 70px;
+}
+
+// Лого в футере
+
+.footer__logo {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: $primary-bg-color;
+}
+
+/* Контакты в футере */
+
+.adress {
+  display: flex;
+  flex-direction: column;
+
+  font-style: normal;
+}
+
+.adress__map {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.adress__link {
+  margin-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
+
+  transition: color $transition-duration $timing-function;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
