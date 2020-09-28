@@ -19,16 +19,24 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   &:not(:last-child) {
-    // margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
 // Обёртка для контента элемента
 
 .team__content {
-  padding: 30px 32px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  // padding: 30px 32px;
 
   text-align: center;
+}
+
+// Фото сотрудника
+
+.team__img {
+  width: 100%;
 }
 
 // Тайтл (Имя сотрудника)
