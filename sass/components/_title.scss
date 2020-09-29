@@ -4,12 +4,12 @@
   margin-top: 0;
   margin-bottom: 30px;
 
-  color: #212121;
-  @include font(700, 28px, 1.17);  
-
-  text-align: center;
-
   @include for-size(desktop) {
     margin-bottom: 50px;
   }
+
+  color: #212121;
+  @include font(700, 28px, 1.17);
+
+  text-align: center;
 }
