@@ -1,21 +1,57 @@
 // Страница портфолио
 
 .portfolio-section {
-  padding: 94px 0;
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 // Кнопки-фильтры для портфолио
 
 .filters {
   @extend %list;
-  display: flex;
-  justify-content: center;
 
-  margin-bottom: 50px;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+
+    margin-bottom: 50px;
+  }
 }
 
-.filters__item:not(:last-child) {
-  margin-right: 8px;
+.filters__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
 }
 
 .filters__btn {
@@ -55,23 +91,47 @@
 
 .portfolio {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-
   transition: box-shadow $transition-duration $timing-function;
 
-  &:nth-child(3n) {
-    margin-right: 0px;
+  @media screen and (max-width: 767px) {    
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 1 * 30px) / 2);
+
+    &:nth-last-child(n + 2) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * 30px) / 3);
+
+    &:nth-last-child(n + 4) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
   }
 
   &:hover,
