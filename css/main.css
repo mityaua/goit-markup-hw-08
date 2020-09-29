@@ -228,7 +228,12 @@ img {
 
 .features {
   padding-top: 60px;
-  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .features {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -449,6 +454,29 @@ img {
   fill: #ffffff;
 }
 
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .clients__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .clients__item {
   height: 90px;
   border: 1px solid #afb1b8;
@@ -461,6 +489,39 @@ img {
   border-color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .clients__item {
+    width: calc((100% - 1 * 30px) / 2);
+  }
+  .clients__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .clients__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__item {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+  .clients__item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+  .clients__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 5 * 30px) / 6);
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -471,7 +532,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: auto;
   height: 90px;
 }
 
@@ -518,21 +579,14 @@ img {
   }
 }
 
-@media (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-@media (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -552,6 +606,14 @@ img {
 @media (min-width: 1200px) {
   .title {
     margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
