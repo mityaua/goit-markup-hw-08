@@ -5,22 +5,49 @@
   padding-bottom: 60px;
 }
 
+// Список
+
 .features__list {
   @extend %list;
 
-  // display: flex;
-}
-
-.features__item {
-    // width: calc((100% - 90px) / 4);
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    // margin: -30px;
   }
 
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+// Элемент списка
+
+.features__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 1 * 30px) / 2);
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 // Обертка для иконки с фоном
@@ -50,9 +77,12 @@
   color: $second-text-color;
 
   @include font(700, 14px, 1.17);
-  // @include font(700, 14px, 1.14);
   text-align: center;
   text-transform: uppercase;
+
+  @include for-size(tablet) {
+    text-align: left;
+  }
 }
 
 // Текст
