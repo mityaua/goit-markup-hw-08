@@ -1,13 +1,27 @@
 // Секция Героя
 
 .hero {
-  // display: flex;
-  // align-items: center;
-
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
+
+  @media screen and (min-width: 1200px) {
+    min-height: 600px;
+  }
+
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    padding: 118px 60px;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 118px 204px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px;
+  }
 
   background-color: $second-bg-color;
   background-image: linear-gradient(
@@ -22,7 +36,12 @@
 }
 
 .hero__content {
-  max-width: 696px;
+  max-width: 360px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
+
   margin-right: auto;
   margin-left: auto;
 
@@ -37,10 +56,12 @@
 
   color: $primary-bg-color;
 
-  @include font(900, 44px, 1.36);
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
+  @include font(900, 26px, 1.62);
+
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44px, 1.36);
+  }
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
