@@ -191,6 +191,12 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .portfolio-section {
     padding: 60px 0;
@@ -548,6 +554,28 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
+}
+
+.mobile-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.mobile-button .icon-cross {
+  display: none;
+}
+
+.mobile-button.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-button.is-open .icon-menu {
+  display: none;
 }
 
 .contacts {

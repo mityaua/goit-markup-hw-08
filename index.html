@@ -21,6 +21,23 @@
           <a href="./index.html" class="logo header__logo"
             ><span class="logo__text">Web</span>Studio</a
           >
+          
+          <button type="button" class="mobile-button" aria-expanded="false" data-menu-button>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#icon-cross"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-mobile-menu"
+              ></use>
+            </svg>
+          </button>
 
           <!-- Меню в хедере -->
           <!-- <ul class="menu">
@@ -764,5 +781,8 @@
           });
       })();
     </script>
+
+    <!-- Скрипт для мобильного меню -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

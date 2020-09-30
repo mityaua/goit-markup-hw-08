@@ -60,3 +60,25 @@
     background-color: $accent-color;
   }
 }
+
+// Меню в мобильном виде
+
+.mobile-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  & .icon-cross {
+    display: none;    
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }  
+}
