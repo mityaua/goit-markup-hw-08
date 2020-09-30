@@ -8,21 +8,6 @@
     min-height: 600px;
   }
 
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (max-width: 767px) {
-    padding: 118px 60px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 118px 204px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding: 200px;
-  }
-
   background-color: $second-bg-color;
   background-image: linear-gradient(
       to right,
@@ -40,14 +25,18 @@
 .hero__content {
   max-width: 360px;
 
-  @media screen and (min-width: 1200px) {
-    max-width: 696px;
-  }
+  padding: 118px 0;
 
   margin-right: auto;
   margin-left: auto;
 
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+
+    padding: 200px 0;
+  }
 }
 
 // Тайтл Героя

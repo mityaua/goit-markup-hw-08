@@ -1,7 +1,7 @@
 // Футер
 
 .footer {
-  // padding: 60px 60px;
+  padding: 60px 0;
 
   background-color: $second-bg-color;
 
@@ -9,5 +9,9 @@
 }
 
 .footer-blocks {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  
   // @include flexbox(space-between, baseline);
 }
