@@ -2,14 +2,6 @@
 
 .header__logo {
   color: $second-text-color;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 88px;
-  }
-
-  @media screen and (min-width: 1199px) {
-    margin-right: 93px;
-  }
 }
 
 // Пункты меню в хедере
@@ -153,5 +145,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
