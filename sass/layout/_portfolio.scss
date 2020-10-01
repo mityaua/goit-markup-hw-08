@@ -47,6 +47,12 @@
     }
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 8px;
@@ -106,7 +112,7 @@
 .portfolio__item {
   transition: box-shadow $transition-duration $timing-function;
 
-  @media screen and (max-width: 767px) {    
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }

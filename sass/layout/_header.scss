@@ -1,23 +1,31 @@
 // Хедер
 
 .header {
-  border-bottom: 1px solid #ececec;
+  position: relative;
 
-  @media screen and (max-width: 767px) {
-    height: 60px;
-  }
+  border-bottom: 1px solid #ececec;
 }
 
 // Обёртка для всей навигации
 
 .main-nav {
-  // display: flex;
-  // align-items: center;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 // Обёртка для логотипа и меню
 
-.navbar {
-  // display: flex;
-  // align-items: center;
-}
+// .navbar {
+//   display: flex;
+//   align-items: center;
+// }
