@@ -12,7 +12,7 @@
 
   transition: opacity $transition-duration $timing-function;
 
-  opacity: 1; 
+  opacity: 1;
 
   &.is-hidden {
     opacity: 0;
@@ -21,8 +21,6 @@
 
   @media screen and (max-width: 767px) {
     padding: 93px 15px;
-
-    overflow-y: scroll;
   }
 
   @media screen and (max-width: 1199px) {
@@ -44,9 +42,13 @@
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.5);
+
+    @media screen and (max-width: 767px) {
+      transform: scale(0.5);
+    }
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     top: 75%;
     left: 50%;

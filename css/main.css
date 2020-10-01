@@ -1253,7 +1253,6 @@ img {
 @media screen and (max-width: 767px) {
   .backdrop {
     padding: 93px 15px;
-    overflow-y: scroll;
   }
 }
 
@@ -1280,7 +1279,14 @@ img {
           transform: translate(-50%, -50%) scale(0.5);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
+  .backdrop.is-hidden .modal {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .modal {
     position: absolute;
     top: 75%;
