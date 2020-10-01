@@ -197,12 +197,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 60px;
   }
 }
@@ -212,12 +212,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -902,12 +902,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1289,7 +1289,7 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 50%;
     width: 450px;
     height: auto;
@@ -1500,6 +1500,14 @@ img {
   background-image: url("../images/form-check.svg");
   background-size: contain;
   background-origin: border-box;
+}
+
+@media screen and (max-width: 1199px) {
+  .policy__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .policy__link {
