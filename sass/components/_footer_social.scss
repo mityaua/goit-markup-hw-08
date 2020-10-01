@@ -1,8 +1,13 @@
 // Соц сети в футере
 
 .networks {
-  margin-bottom: 60px;
-  // margin-right: 93px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 // Тайтл блока

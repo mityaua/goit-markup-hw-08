@@ -27,19 +27,17 @@
 
 .hero__content {
   max-width: 360px;
-
   padding: 118px 0;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    padding: 200px 0;
+  }
 
   margin-right: auto;
   margin-left: auto;
 
   text-align: center;
-
-  @media screen and (min-width: 1200px) {
-    max-width: 696px;
-
-    padding: 200px 0;
-  }
 }
 
 // Тайтл Героя

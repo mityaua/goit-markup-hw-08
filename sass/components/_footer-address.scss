@@ -1,9 +1,14 @@
 // Блок с адресом в футере
 
 .address-block {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 
-  // margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 // Лого в футере
@@ -19,29 +24,40 @@
 /* Контакты в футере */
 
 .adress {
-  // display: flex;
-  // flex-direction: column;
-
   font-style: normal;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .adress__map {
   margin-top: 0;
-  // margin-bottom: 9px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+
+// Список телефонов и почт
+
+.adress__list {
+  @extend %list;
+}
+
+.adress__item {
+    &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 .adress__link {
-  // margin-bottom: 9px;
-
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
 
   transition: color $transition-duration $timing-function;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   &:hover,
   &:focus {
