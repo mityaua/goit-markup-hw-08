@@ -988,6 +988,10 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.networks__icon {
+  fill: #ffffff;
+}
+
 .networks__link:hover .networks__icon,
 .networks__link:focus .networks__icon {
   fill: #f5f4fa;
