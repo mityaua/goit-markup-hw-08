@@ -784,8 +784,8 @@ img {
 .contacts__link {
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -794,6 +794,14 @@ img {
 
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 767px) {
+  .contacts__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {

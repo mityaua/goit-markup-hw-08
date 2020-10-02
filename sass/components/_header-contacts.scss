@@ -30,7 +30,7 @@
 .contacts__link {
   color: $primary-text-color;
 
-  @include font(500, 14px, 1.14);
+  @include font(500, 18px, 1.16);
   letter-spacing: 0.02em;
   text-decoration: none;
 
@@ -39,6 +39,10 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 767px) {
+    @include font(500, 14px, 1.14);
   }
 }
 
@@ -51,10 +55,6 @@
   @media screen and (max-width: 767px) {    
     justify-content: center;    
   }
-
-  // @media screen and (min-width: 768px) {    
-  //   align-items: center;
-  // }
 }
 
 .contacts__mail {
