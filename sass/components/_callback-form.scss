@@ -33,6 +33,10 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+
+  &:focus-within {
+    color: $accent-color;
+  }
 }
 
 .callback__area {
@@ -109,7 +113,7 @@
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
-  }  
+  }
 
   &:focus {
     outline: transparent;
@@ -120,11 +124,11 @@
 // Политика для формы
 
 .policy-block {
-  display: block;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 
   margin-bottom: 30px;
-
-  text-align: center;
 
   cursor: pointer;
 }
@@ -157,7 +161,7 @@
 
 .policy__text {
   @media screen and (max-width: 1199px) {
-    @include font(400, 12px, 1.16); 
+    @include font(400, 12px, 1.16);
   }
 }
 
