@@ -159,6 +159,12 @@
   overflow: hidden;
 }
 
+.portfolio__img {
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+}
+
 .portfolio__tooltip {
   position: absolute;
   bottom: 0;
