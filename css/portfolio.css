@@ -170,6 +170,12 @@ body {
   line-height: 1.71;
 }
 
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -188,8 +194,17 @@ img {
 }
 
 .header {
-  position: relative;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1227,15 +1242,17 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .callback__group:focus-within {
+    color: #2196f3;
+  }
+}
+
 .callback__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-}
-
-.callback__label:focus-within {
-  color: #2196f3;
 }
 
 .callback__area {
@@ -1292,6 +1309,12 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .callback__commit:focus-within {
+    color: #2196f3;
+  }
 }
 
 .callback__textarea {

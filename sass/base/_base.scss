@@ -6,7 +6,11 @@ body {
   font-family: $primary-font;
   letter-spacing: 0.03em;
   font-size: 14px;
-  line-height: 1.71;    
+  line-height: 1.71;
+  
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
 }
 
 // Убирает лишние отступы у картинок снизу

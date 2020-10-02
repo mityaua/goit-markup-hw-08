@@ -1,18 +1,23 @@
 // Хедер
 
 .header {
-  position: relative;
-
   border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: $primary-bg-color;
+
+    z-index: 1;
+  }
 }
 
 // Обёртка для всей навигации
 
 .main-nav {
   @media screen and (max-width: 767px) {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
 
     @include flexbox(space-between, center);
 
@@ -20,9 +25,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
     @include flexbox(space-between, center);
   }
 }

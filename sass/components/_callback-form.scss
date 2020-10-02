@@ -25,6 +25,12 @@
   flex-direction: column;
 
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    &:focus-within {
+      color: $accent-color;
+    }
+  }
 }
 
 .callback__label {
@@ -33,10 +39,6 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-
-  &:focus-within {
-    color: $accent-color;
-  }
 }
 
 .callback__area {
@@ -93,6 +95,12 @@
   flex-direction: column;
 
   margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    &:focus-within {
+      color: $accent-color;
+    }
+  }
 }
 
 .callback__textarea {
