@@ -1326,8 +1326,8 @@ img {
     left: 50%;
     width: 450px;
     height: auto;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -25%) scale(1);
+            transform: translate(-50%, -25%) scale(1);
   }
 }
 
@@ -1335,6 +1335,8 @@ img {
   .modal {
     top: 50%;
     width: 528px;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 

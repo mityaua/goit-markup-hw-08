@@ -56,12 +56,14 @@
     width: 450px;
     height: auto;
 
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -25%) scale(1);
   }
 
   @media screen and (min-width: 1200px) {
     top: 50%;
     width: 528px;
+
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

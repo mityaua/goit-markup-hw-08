@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Web Studio | Версия 2.0</title>
-    <meta
-      name="description"
-      content="Вторая версия культового макета Web Studio"
-    />
+    <meta name="description" content="Вторая версия культового макета Web Studio" />
 
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
@@ -17,28 +14,12 @@
     <header class="header">
       <div class="container main-nav">
         <!-- Лого в хедере -->
-        <a href="./index.html" class="logo header__logo"
-          ><span class="logo__text">Web</span>Studio</a
-        >
+        <a href="./index.html" class="logo header__logo"><span class="logo__text">Web</span>Studio</a>
 
-        <button
-          type="button"
-          class="mobile-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-            class="mobile-button__icon"
-          >
+        <button type="button" class="mobile-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню" class="mobile-button__icon">
             <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
-            <use
-              class="icon-menu"
-              href="./images/sprite.svg#icon-mobile-menu"
-            ></use>
+            <use class="icon-menu" href="./images/sprite.svg#icon-mobile-menu"></use>
           </svg>
         </button>
 
@@ -47,9 +28,7 @@
           <nav>
             <ul class="menu">
               <li class="menu__item">
-                <a href="./index.html" class="menu__link menu__link--current"
-                  >Студия</a
-                >
+                <a href="./index.html" class="menu__link menu__link--current">Студия</a>
               </li>
               <li class="menu__item">
                 <a href="./portfolio.html" class="menu__link">Портфолио</a>
@@ -93,9 +72,7 @@
       <!-- Секция Героя -->
       <section class="hero">
         <div class="hero__content">
-          <h1 class="hero__title">
-            Эффективные решения<br />для вашего бизнеса
-          </h1>
+          <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
           <button data-modal-open class="btn hero__btn">Заказать услугу</button>
         </div>
       </section>
@@ -112,10 +89,7 @@
                 </svg>
               </div>
               <h3 class="features__title">Внимание к деталям</h3>
-              <p class="features__text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
+              <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="features__item">
               <div class="features__img">
@@ -124,10 +98,7 @@
                 </svg>
               </div>
               <h3 class="features__title">Пунктуальность</h3>
-              <p class="features__text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
+              <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="features__item">
               <div class="features__img">
@@ -136,10 +107,7 @@
                 </svg>
               </div>
               <h3 class="features__title">Планирование</h3>
-              <p class="features__text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
+              <p class="features__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="features__item">
               <div class="features__img">
@@ -148,10 +116,7 @@
                 </svg>
               </div>
               <h3 class="features__title">Современные технологии</h3>
-              <p class="features__text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
+              <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -164,34 +129,45 @@
           <ul class="photos__list">
             <li class="photos__item">
               <div class="photos__thumb">
-                <img
-                  src="./images/whattodo-1.jpg"
-                  alt="Человек печатает текст на клавиатуре"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/desktop/whattodo-1-1200@1x.jpg 1x, ./images/desktop/whattodo-1-1200@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img src="./images/desktop/whattodo-1-1200@1x.jpg" alt="Человек печатает текст на клавиатуре" width="370" height="294" />
+                </picture>
                 <p class="photos__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="photos__item">
               <div class="photos__thumb">
-                <img
-                  src="./images/whattodo-2.jpg"
-                  alt="Человек смотрит на смартфон перед ноутбуком"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/desktop/whattodo-2-1200@1x.jpg 1x, ./images/desktop/whattodo-2-1200@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    src="./images/desktop/whattodo-2-1200@2x.jpg"
+                    alt="Человек смотрит на смартфон перед ноутбуком"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="photos__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="photos__item">
               <div class="photos__thumb">
-                <img
-                  src="./images/whattodo-3.jpg"
-                  alt="Цветовая палитра на экране планшета"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/desktop/whattodo-3-1200@1x.jpg 1x, ./images/desktop/whattodo-3-1200@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img src="./images/desktop/whattodo-3-1200@2x.jpg" alt="Цветовая палитра на экране планшета" width="370" height="294" />
+                </picture>
                 <p class="photos__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -205,74 +181,52 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/team-1.jpg"
-                class="team__img"
-                alt="Мужчина в очках и с бородой"
-                title="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/team-1-1200@1x.jpg 1x, ./images/desktop/team-1-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source srcset="./images/tablet/team-1-768@1x.jpg 1x, ./images/tablet/team-1-768@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/team-1-480@1x.jpg 1x, ./images/mobile/team-1-480@2x.jpg 2x" media="(max-width: 767px)" />
+
+                <img
+                  src="./images/mobile/team-1-480@1x.jpg"
+                  class="team__img"
+                  alt="Мужчина в очках и с бородой"
+                  title="Игорь Демьяненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
                 <ul class="social">
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Instagramm"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Instagramm">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Twitter"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Twitter">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Facebook"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Facebook">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="LinkedIn"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="LinkedIn">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -281,74 +235,51 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team-2.jpg"
-                class="team__img"
-                alt="Женщина-блондинка в очках и костюме"
-                title="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/team-2-1200@1x.jpg 1x, ./images/desktop/team-2-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source srcset="./images/tablet/team-2-768@1x.jpg 1x, ./images/tablet/team-2-768@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/team-2-480@1x.jpg 1x, ./images/mobile/team-2-480@2x.jpg 2x" media="(max-width: 767px)" />
+
+                <img
+                  src="./images/mobile/team-2-480@1x.jpg"
+                  class="team__img"
+                  alt="Женщина-блондинка в очках и костюме"
+                  title="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
                 <ul class="social">
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Instagramm"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Instagramm">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Twiter"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Twiter">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Facebook"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Facebook">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social_item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="LinkedIn"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="LinkedIn">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -357,74 +288,51 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team-3.jpg"
-                class="team__img"
-                alt="Мужчина в светлой рубашке"
-                title="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/team-3-1200@1x.jpg 1x, ./images/desktop/team-3-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source srcset="./images/tablet/team-3-768@1x.jpg 1x, ./images/tablet/team-3-768@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/team-3-480@1x.jpg 1x, ./images/mobile/team-3-480@2x.jpg 2x" media="(max-width: 767px)" />
+
+                <img
+                  src="./images/mobile/team-3-480@1x.jpg"
+                  class="team__img"
+                  alt="Мужчина в светлой рубашке"
+                  title="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 <ul class="social">
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Instagramm"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Instagramm">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Twiter"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Twiter">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Facebook"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Facebook">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="LinkedIn"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="LinkedIn">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -433,74 +341,51 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team-4.jpg"
-                class="team__img"
-                alt="Мужчина в очках, с бородой, в темной футболке"
-                title="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/team-4-1200@1x.jpg 1x, ./images/desktop/team-4-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source srcset="./images/tablet/team-4-768@1x.jpg 1x, ./images/tablet/team-4-768@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/team-4-480@1x.jpg 1x, ./images/mobile/team-4-480@2x.jpg 2x" media="(max-width: 767px)" />
+
+                <img
+                  src="./images/mobile/team-4-480@1x.jpg"
+                  class="team__img"
+                  alt="Мужчина в очках, с бородой, в темной футболке"
+                  title="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
                 <ul class="social">
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Instagramm"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Instagramm">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Twiter"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Twiter">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="Facebook"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="Facebook">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a
-                      href="#"
-                      class="media-link social__link"
-                      aria-label="LinkedIn"
-                    >
-                      <svg
-                        class="media-icon social__icon"
-                        width="20"
-                        height="20"
-                      >
+                    <a href="#" class="media-link social__link" aria-label="LinkedIn">
+                      <svg class="media-icon social__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -570,23 +455,17 @@
           <!-- Адрес в футере -->
           <div class="address-block">
             <!-- Логотип в футере -->
-            <a href="./index.html" class="logo footer__logo"
-              ><span class="logo__text">Web</span>Studio</a
-            >
+            <a href="./index.html" class="logo footer__logo"><span class="logo__text">Web</span>Studio</a>
 
             <!-- Контакты в футере -->
             <address class="adress">
               <p class="adress__map">г. Киев, пр-т Леси Украинки, 26</p>
               <ul class="adress__list">
                 <li class="adress__item">
-                  <a href="mailto:info@example.com" class="adress__link"
-                    >info@example.com</a
-                  >
+                  <a href="mailto:info@example.com" class="adress__link">info@example.com</a>
                 </li>
                 <li class="adress__item">
-                  <a href="tel:+380991111111" class="adress__link"
-                    >+38 099 111 11 11</a
-                  >
+                  <a href="tel:+380991111111" class="adress__link">+38 099 111 11 11</a>
                 </li>
               </ul>
             </address>
@@ -597,44 +476,28 @@
             <b class="networks__title">Присоединяйтесь</b>
             <ul class="networks__list">
               <li class="networks__item">
-                <a
-                  href="#"
-                  class="media-link networks__link"
-                  aria-label="Instagram"
-                >
+                <a href="#" class="media-link networks__link" aria-label="Instagram">
                   <svg class="media-icon networks__icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="networks__item">
-                <a
-                  href="#"
-                  class="media-link networks__link"
-                  aria-label="Twiter"
-                >
+                <a href="#" class="media-link networks__link" aria-label="Twiter">
                   <svg class="media-icon networks__icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="networks__item">
-                <a
-                  href="#"
-                  class="media-link networks__link"
-                  aria-label="Facebook"
-                >
+                <a href="#" class="media-link networks__link" aria-label="Facebook">
                   <svg class="media-icon networks__icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="networks__item">
-                <a
-                  href="#"
-                  class="media-link networks__link"
-                  aria-label="LinkedIn"
-                >
+                <a href="#" class="media-link networks__link" aria-label="LinkedIn">
                   <svg class="media-icon networks__icon" width="20" height="20">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
                   </svg>
@@ -656,11 +519,7 @@
                 class="subscribe__input"
                 aria-label="Введите почту для будущей рассылки"
               />
-              <button
-                type="submit"
-                class="btn subscribe__btn"
-                aria-label="Оформляет подписку на рассылку"
-              >
+              <button type="submit" class="btn subscribe__btn" aria-label="Оформляет подписку на рассылку">
                 <span>Подписаться</span>
                 <svg class="subscribe__icon" width="24" height="24">
                   <use href="./images/sprite.svg#icon-send"></use>
@@ -676,31 +535,18 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="callback-form js-speaker-form">
-          <button
-            data-modal-close
-            class="modal__close-btn"
-            type="button"
-            aria-label="Закрывает модальное окно"
-          >
+          <button data-modal-close class="modal__close-btn" type="button" aria-label="Закрывает модальное окно">
             <svg class="modal__close-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
           </button>
 
-          <b class="callback__title">
-            Оставьте свои данные, мы вам перезвоним
-          </b>
+          <b class="callback__title"> Оставьте свои данные, мы вам перезвоним </b>
 
           <label class="callback__group">
             <span class="callback__label">Имя</span>
             <span class="callback__area">
-              <input
-                class="callback__input"
-                type="text"
-                name="name"
-                pattern="^[A-Za-zА-Яа-яЁё\s]+$"
-                required
-              />
+              <input class="callback__input" type="text" name="name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required />
               <svg class="callback__icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-form-name"></use>
               </svg>
@@ -710,13 +556,7 @@
           <label class="callback__group">
             <span class="callback__label">Телефон</span>
             <span class="callback__area">
-              <input
-                class="callback__input"
-                type="tel"
-                name="tel"
-                pattern="[0-9]{10,12}"
-                required
-              />
+              <input class="callback__input" type="tel" name="tel" pattern="[0-9]{10,12}" required />
               <svg class="callback__icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-form-phone"></use>
               </svg>
@@ -726,12 +566,7 @@
           <label class="callback__group">
             <span class="callback__label">Почта</span>
             <span class="callback__area">
-              <input
-                class="callback__input"
-                type="email"
-                name="email"
-                required
-              />
+              <input class="callback__input" type="email" name="email" required />
               <svg class="callback__icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-form-mail"></use>
               </svg>
@@ -740,37 +575,17 @@
 
           <label class="callback__commit">
             <span class="callback__label">Комментарий</span>
-            <textarea
-              name="commit"
-              rows="5"
-              placeholder="Введите текст"
-              class="callback__textarea"
-            ></textarea>
+            <textarea name="commit" rows="5" placeholder="Введите текст" class="callback__textarea"></textarea>
           </label>
 
           <label class="policy-block">
-            <input
-              class="checkbox visually-hidden"
-              type="checkbox"
-              name="policy"
-              value="agree"
-              required
-            />
+            <input class="checkbox visually-hidden" type="checkbox" name="policy" value="agree" required />
             <span class="policy__icon"></span>
-            <span class="policy__text"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="policy__link">Условия договора</a></span
-            >
+            <span class="policy__text">Соглашаюсь с рассылкой и принимаю <a href="#" class="policy__link">Условия договора</a></span>
           </label>
 
           <div class="btn-block">
-            <button
-              type="submit"
-              class="btn callback__btn"
-              aria-label="Отправялет форму"
-            >
-              Отправить
-            </button>
+            <button type="submit" class="btn callback__btn" aria-label="Отправялет форму">Отправить</button>
           </div>
         </form>
       </div>
@@ -785,15 +600,11 @@
     <!-- Скрипт для отправки данных с формы модального окна -->
     <script>
       (() => {
-        document
-          .querySelector(".js-speaker-form")
-          .addEventListener("submit", (e) => {
-            e.preventDefault();
+        document.querySelector(".js-speaker-form").addEventListener("submit", (e) => {
+          e.preventDefault();
 
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-          });
+          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+        });
       })();
     </script>
   </body>
