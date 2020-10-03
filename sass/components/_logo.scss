@@ -1,4 +1,4 @@
-// Общее лого
+// Общий стиль лого
 
 .logo {
   font-family: $secondary-font;
@@ -12,4 +12,10 @@
   @media screen and (min-width: 1200px) {
     @include font (700, 26px, 1.19);
   }
+}
+
+// Логотип в хедере
+
+.header__logo {
+  color: $second-text-color;
 }
