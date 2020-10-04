@@ -68,6 +68,10 @@
   margin-right: 10px;
 
   fill: currentColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
 }
 
 .contacts__phone {
@@ -76,4 +80,8 @@
   height: 16px;
 
   fill: currentColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
 }

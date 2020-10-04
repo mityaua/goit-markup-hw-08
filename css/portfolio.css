@@ -875,11 +875,23 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__mail {
+    margin-right: 8px;
+  }
+}
+
 .contacts__phone {
   margin-right: 10px;
   width: 10px;
   height: 16px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__phone {
+    margin-right: 8px;
+  }
 }
 
 .media-link {
