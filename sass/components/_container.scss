@@ -6,26 +6,14 @@
   padding: 0 15px;
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 480px;
+    width: calc(480px - 15px);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 768px;
+    width: calc(768 - 15px);
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: calc(1200px - 15px);
   }
-
-  // @include for-size(mobile) {
-  //   width: 480px;
-  // }
-
-  // @include for-size(tablet) {
-  //   width: 768px;
-  // }
-
-  // @include for-size(desktop) {
-  //   width: 1200px;
-  // }
 }
