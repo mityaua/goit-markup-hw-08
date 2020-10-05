@@ -159,11 +159,13 @@
   overflow: hidden;
 }
 
-.portfolio__img {
-  @media screen and (max-width: 1199px) {
-    width: 100%;
-  }
-}
+// Картинка элемента портфолио
+
+// .portfolio__img {
+//   @media screen and (max-width: 1199px) {
+//     width: 100%;
+//   }
+// }
 
 .portfolio__tooltip {
   position: absolute;
@@ -189,19 +191,22 @@
 
   transition: all $transition-duration $timing-function;
 
-  opacity: 0;
-
-  overflow-y: auto;
+  opacity: 0;  
 
   .portfolio__link:hover &,
   .portfolio__link:focus & {
     transform: translateY(0);
 
     opacity: 1;
+    
   }
 
-  @media screen and (min-width: 768px) {
-    padding: 49px 24px;
+  @media screen and (max-width: 767px) {
+    overflow-y: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 49px 24px;    
   }
 
   @media screen and (min-width: 1200px) {

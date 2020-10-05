@@ -511,12 +511,6 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .team__img {
-    width: 100%;
-  }
-}
-
 .team__content {
   padding-top: 30px;
   padding-bottom: 24px;
