@@ -5,15 +5,27 @@
   margin-right: auto;
   padding: 0 15px;
 
-  @include for-size(mobile) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
   }
 
-  @include for-size(tablet) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
   }
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
+
+  // @include for-size(mobile) {
+  //   width: 480px;
+  // }
+
+  // @include for-size(tablet) {
+  //   width: 768px;
+  // }
+
+  // @include for-size(desktop) {
+  //   width: 1200px;
+  // }
 }

@@ -4,16 +4,18 @@
   margin-top: 0;
   margin-bottom: 30px;
 
-  @include for-size(desktop) {
-    margin-bottom: 50px;
-  }
-
   color: #212121;
   @include font(700, 28px, 1.17);
 
-  @include for-size(desktop) {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
     @include font(700, 36px, 1.17);
+    margin-bottom: 50px;
   }
 
-  text-align: center;
+  // @include for-size(desktop) {
+  //   @include font(700, 36px, 1.17);
+  //   margin-bottom: 50px;
+  // }
 }

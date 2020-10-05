@@ -82,9 +82,13 @@
   text-align: center;
   text-transform: uppercase;
 
-  @include for-size(tablet) {
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
+
+  // @include for-size(tablet) {
+  //   text-align: left;
+  // }
 }
 
 // Текст
