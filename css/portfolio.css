@@ -170,6 +170,10 @@ body {
   line-height: 1.71;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 767px) {
   body {
     padding-top: 60px;
