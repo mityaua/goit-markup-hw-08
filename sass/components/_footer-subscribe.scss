@@ -1,5 +1,10 @@
 // Форма подписки в футере
 
+.subscribe {
+  width: 450px;
+}
+
+
 .subscribe__field {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -52,7 +57,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 450px;
+    width: 100%;
     margin-bottom: 20px;
   }
 
