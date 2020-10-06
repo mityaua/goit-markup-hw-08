@@ -110,6 +110,8 @@
 }
 
 .portfolio__item {
+  height: 100%;
+
   transition: box-shadow $transition-duration $timing-function;
 
   @media screen and (max-width: 767px) {
