@@ -8,9 +8,11 @@ body {
   font-size: 14px;
   line-height: 1.71;
 
+  overflow-x: hidden;
+
   &.modal-open {
     overflow: hidden;
-  }
+  }  
   
   @media screen and (max-width: 767px) {
     padding-top: 60px;
