@@ -478,9 +478,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .portfolio__title {
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 2;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 
