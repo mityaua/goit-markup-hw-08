@@ -1,4 +1,4 @@
-// Страница портфолио
+// Страница портфолио (секция)
 
 .portfolio-section {
   @media screen and (max-width: 1199px) {
@@ -10,7 +10,7 @@
   }
 }
 
-// Кнопки-фильтры для портфолио
+// Список для кнопок-фильтров
 
 .filters {
   @extend %list;
@@ -37,6 +37,8 @@
   }
 }
 
+// Элемент списка кнопок-фильтров
+
 .filters__item {
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -59,6 +61,8 @@
     }
   }
 }
+
+// Кнопки в списке
 
 .filters__btn {
   display: inline-block;
@@ -93,7 +97,7 @@
   }
 }
 
-// Сетка портфолио
+// Список для сетки портфолио
 
 .portfolio {
   @extend %list;
@@ -108,6 +112,8 @@
     flex-wrap: wrap;
   }
 }
+
+// Элемент списка портфолио
 
 .portfolio__item {
   height: 100%;
@@ -148,17 +154,21 @@
   }
 }
 
+// Ссылка для элемента списка портфолио
+
 .portfolio__link {
   text-decoration: none;
 }
 
-// Оверлей портфолио
+// Обертка для картинки и текста портфолио (под оверлей)
 
 .portfolio__thumb {
   position: relative;
 
   overflow: hidden;
 }
+
+// Оверлей портфолио (поверх фото)
 
 .portfolio__tooltip {
   position: absolute;
@@ -207,7 +217,7 @@
   }
 }
 
-// Текст карточки портфолио
+// Текст на оверлее (поверх фото)
 
 .portfolio__content {
   padding: 20px 24px;
@@ -215,6 +225,8 @@
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+
+// Тайтла для элемента списка портфолио
 
 .portfolio__title {
   margin-top: 0;
@@ -229,6 +241,8 @@
     @include font(700, 17px, 2);
   }
 }
+
+// Текст для элемента списка (под тайтлом)
 
 .portfolio__text {
   margin: 0;
