@@ -4,6 +4,8 @@
   background-color: $additional-background-color;
 }
 
+// Список секции
+
 .team__list {
   @extend %list;
 
@@ -15,6 +17,7 @@
     display: flex;
   }
 }
+// Элемент списка
 
 .team__item {
   border-bottom-right-radius: 4px;
@@ -47,27 +50,16 @@
   }
 }
 
-// Картинка под фото сотрудника
-
-// .team__img {
-//   @media screen and (max-width: 1199px) {
-//     width: 100%;
-//   }
-// }
-
 // Обёртка для контента элемента
 
 .team__content {
   padding-top: 30px;
   padding-bottom: 24px;
-  // padding: 30px 32px;
 
   text-align: center;
 }
 
-// Фото сотрудника (временно пустой класс)
-
-// Тайтл (Имя сотрудника)
+// Тайтл элемента (имя сотрудника)
 
 .team__name {
   margin-top: 0;
@@ -78,7 +70,7 @@
   @include font(500, 16px, 1.18);
 }
 
-// Текст (должность)
+// Текст элемента (должность сотрудника)
 
 .team__text {
   margin-top: 0;
@@ -96,11 +88,11 @@
   justify-content: center;
 }
 
+// Элемент списка социальных сетей
+
 .social__item:not(:last-child) {
   margin-right: 10px;
 }
-
-// Ссылки на социальные страницы сотрудника
 
 // Иконки соццальных сетей
 

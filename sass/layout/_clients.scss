@@ -1,5 +1,7 @@
 // Секция "Постоянные клиенты"
 
+// Список секции
+
 .clients__list {
   @extend %list;
 
@@ -14,6 +16,8 @@
     flex-wrap: nowrap;
   }
 }
+
+// Элемент списка
 
 .clients__item {
   height: 90px;
@@ -59,6 +63,8 @@
   }
 }
 
+// Ссылка клиента
+
 .clients__link {
   @include flexbox(center, center);
 
@@ -66,10 +72,9 @@
   height: 90px;
 }
 
-.clients__icon {
-  // width: 44px;
-  // height: 49px;
+// Иконка клиента
 
+.clients__icon {
   fill: $svg-color;
 
   transition: fill $transition-duration $timing-function;

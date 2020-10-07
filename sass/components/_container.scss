@@ -1,9 +1,9 @@
+// Общий контейнер для всех секций
+
 .container {
   width: 100%;
 
   margin: 0px auto;
-  // margin-left: auto;
-  // margin-right: auto;
   padding: 0px 15px;
 
   @media screen and (min-width: 480px) and (max-width: 767px) {

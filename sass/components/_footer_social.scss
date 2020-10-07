@@ -1,4 +1,4 @@
-// Соц сети в футере
+// Блок соц сетей в футере
 
 .networks {
   @media screen and (max-width: 1199px) {
@@ -33,17 +33,19 @@
   }
 }
 
+// Элемент списка
+
 .networks__item:not(:last-child) {
   margin-right: 10px;
 }
 
-// Ссылки на социальные сети сайта
+// Ссылка элемента
 
 .networks__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-// Иконки соццальных сетей
+// Иконки соцальных сетей
 
 .networks__icon {
   fill: $primary-bg-color;

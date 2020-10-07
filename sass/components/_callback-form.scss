@@ -5,7 +5,7 @@
   padding: 40px;
 }
 
-// Заголовок формы
+// Тайтл для всей формы
 
 .callback__title {
   display: block;
@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-// Поля формы
+// Обёртка для элемента формы
 
 .callback__group {
   display: flex;
@@ -43,9 +43,13 @@
   letter-spacing: 0.01em;
 }
 
+// Обёртка для инпута и иконки
+
 .callback__area {
   position: relative;
 }
+
+// Инпут для поля
 
 .callback__input {
   width: 100%;
@@ -73,6 +77,8 @@
   }
 }
 
+// Иконка внутри поля
+
 .callback__icon {
   position: absolute;
   top: 50%;
@@ -90,7 +96,7 @@
   }
 }
 
-// Комментарий для формы
+// Обёртка-лейбл для поля комментария
 
 .callback__commit {
   display: flex;
@@ -104,6 +110,8 @@
     }
   }
 }
+
+// Поле ввода для поля комментария
 
 .callback__textarea {
   width: 100%;
@@ -143,6 +151,8 @@
   cursor: pointer;
 }
 
+// Каркас под иконку чекбокса
+
 .policy__icon::before {
   display: inline-block;
 
@@ -158,6 +168,8 @@
   transition: all $transition-duration $timing-function;
 }
 
+// Иконка чекбокса в нажатом состоянии
+
 .checkbox:checked + .policy__icon::before {
   vertical-align: middle;
 
@@ -169,21 +181,26 @@
   background-origin: border-box;
 }
 
+// Текст рядом с чекбоксом
+
 .policy__text {
   @media screen and (max-width: 1199px) {
     @include font(400, 12px, 1.16);
   }
 }
 
+// Ссылка в тексте рядом с чекбоксом
 .policy__link {
   color: $accent-color;
 }
 
-// Кнопка для отправки формы
+// Обёртка для кнопки
 
 .btn-block {
   text-align: center;
 }
+
+// Кнопка для отправки формы
 
 .callback__btn {
   padding: 10px 55px;

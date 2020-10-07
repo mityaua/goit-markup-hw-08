@@ -8,7 +8,7 @@
   }
 }
 
-// Список
+// Список секции
 
 .features__list {
   @extend %list;
@@ -70,7 +70,7 @@
   height: 70px;
 }
 
-// Тайтл
+// Тайтл элемента
 
 .features__title {
   margin-top: 0;
@@ -85,13 +85,9 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
-
-  // @include for-size(tablet) {
-  //   text-align: left;
-  // }
 }
 
-// Текст
+// Текст элемента
 
 .features__text {
   margin-top: 0;

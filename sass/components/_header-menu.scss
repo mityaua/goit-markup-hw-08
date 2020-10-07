@@ -63,7 +63,7 @@
   }
 }
 
-// Пункты меню в хедере
+// Список меню в хедере
 
 .menu {
   @extend %list;
@@ -83,6 +83,8 @@
   }
 }
 
+// Элементы списка меню
+
 .menu__item:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
@@ -93,7 +95,7 @@
   }
 }
 
-// Ссылка в меню
+// Ссылка для элемента в меню
 
 .menu__link {
   position: relative;
