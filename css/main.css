@@ -649,7 +649,7 @@ img {
 }
 
 .footer {
-  padding: 60px 0;
+  padding: 60px 0px;
   background-color: #2f303a;
   color: #ffffff;
 }
@@ -724,7 +724,7 @@ img {
   }
 }
 
-.title {
+.section__title {
   margin-top: 0;
   margin-bottom: 30px;
   color: #212121;
@@ -735,7 +735,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .title {
+  .section__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
