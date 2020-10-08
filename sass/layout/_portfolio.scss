@@ -1,14 +1,14 @@
 // Страница портфолио (секция)
 
-.portfolio-section {
-  @media screen and (max-width: 1199px) {
-    padding: 60px 0;
-  }
+// .portfolio-section {
+//   @media screen and (max-width: 1199px) {
+//     padding: 60px 0;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    padding: 94px 0;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     padding: 94px 0;
+//   }
+// }
 
 // Список для кнопок-фильтров
 
@@ -99,7 +99,7 @@
 
 // Список для сетки портфолио
 
-.portfolio {
+.portfolio__list {
   @extend %list;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {

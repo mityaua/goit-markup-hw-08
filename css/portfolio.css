@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.filters, .portfolio, .menu, .contacts, .adress__list, .networks__list {
+.filters, .portfolio__list, .menu, .contacts, .adress__list, .networks__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -240,18 +240,6 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .portfolio-section {
-    padding: 60px 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio-section {
-    padding: 94px 0;
-  }
-}
-
 .filters {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,7 +323,7 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio {
+  .portfolio__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -345,7 +333,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio {
+  .portfolio__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
