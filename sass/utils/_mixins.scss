@@ -22,7 +22,7 @@
   $desktop: 1200px;
 
   @if $range == mobile-only {
-    @media (max-width: #{$mobile - 1}) {
+    @media (max-width: #{$mobile}) {
       @content;
     }
   } @else if $range == mobile {
@@ -33,18 +33,24 @@
     @media (min-width: $tablet) {
       @content;
     }
+  } @else if $range == before-tablet {
+    @media (max-width: #{$tablet - 1}) {
+      @content;
+    }
   } @else if $range == desktop {
     @media (min-width: $desktop) {
       @content;
     }
   }
+  @else if $range == before-desktop {
+    @media (max-width: #{$desktop - 1}) {
+      @content;
+    }
 }
 
 // usage
-// .my-box {
-//   padding: 10px;
 
 //   @include for-size(desktop) {
 //     padding: 20px;
-//   }
-// }
+}
+//
