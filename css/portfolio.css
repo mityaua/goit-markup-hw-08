@@ -462,13 +462,9 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio__title {
-    white-space: nowrap;
-    overflow: hidden;
-  }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .portfolio__text {

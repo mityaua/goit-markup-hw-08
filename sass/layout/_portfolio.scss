@@ -137,7 +137,7 @@
   }
 
   &:hover,
-  &:focus {    
+  &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
@@ -182,14 +182,13 @@
 
   transition: all $transition-duration $timing-function;
 
-  opacity: 0;  
+  opacity: 0;
 
   .portfolio__link:hover &,
   .portfolio__link:focus & {
     transform: translateY(0);
 
     opacity: 1;
-    
   }
 
   @media screen and (max-width: 767px) {
@@ -197,7 +196,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 49px 24px;    
+    padding: 49px 24px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -225,12 +224,9 @@
   @include font(700, 18px, 2);
   letter-spacing: 0.06em;
 
-  @media screen and (min-width: 1200px) {
-    // @include font(700, 18px, 2);
-    // Тестирую перенос тайтла :)
-    white-space: nowrap;
-    overflow: hidden;
-  }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 // Текст для элемента списка (под тайтлом)
